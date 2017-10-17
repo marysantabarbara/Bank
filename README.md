@@ -1,4 +1,6 @@
-# Bank
+# Assignment 1
+### ICS 355
+#### Mary Santabarbara
 
 To get this project to run, first thing you should do is download this repo into your local computer, then run it on your command prompt if you are using a Windows box. If you do not know how to do so please do the following.
 
