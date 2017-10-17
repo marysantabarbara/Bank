@@ -16,3 +16,4 @@ To get this project to run, first thing you should do is download this repo into
 
 Finally, you would have reached the program created. This program will create new instances of accounts every time it runs, so a new account would have to be made every time it runs. Soon I will implement writing accounts to text files so there will be no need for repetition. Despite that, it will handle mismatched data types and will ask for validity at times. Below will be some testing that I have done to test the inputs.
 
+<img src="Testing\creat_menu.png">
