@@ -1,4 +1,4 @@
-# Assignment 1
+# Assignment 2
 ### ICS 355
 #### Mary Santabarbara
 
