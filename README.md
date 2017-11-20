@@ -16,11 +16,125 @@ To get this project to run, first thing you should do is download this repo into
 10. Note there will be a lot of warnings. I did this all in Eclipse so I had those warnings turned off. They are not errors. It will run fine.
 11. Type "java Bank"
 
-Finally, you would have reached the program created. This program will create new instances of accounts every time it runs, so a new account would have to be made every time it runs. Soon I will implement writing accounts to text files so there will be no need for repetition. Despite that, it will handle mismatched data types, will not be case sensitive or white space sensitive and will ask for validity at times. Below will be some testing that I have done to test the inputs.
-
+It will look very similar to below but not exactly since this was a picture from the last version.
 <img src="Testing\creat_menu.PNG">
-<img src="Testing\manag_menu.PNG">
-<img src="Testing\manag_menu2.PNG">
-<img src="Testing\manag_menu3.PNG">
-<img src="Testing\maint_menu.PNG">
-<img src="Testing\exitt_menu.PNG">
+
+#### The Program
+A new log in implementation has been added. 
+  To log in to the adminisitrator
+  - Log in to the user "peachy"
+  - The password is "password"
+Administrators can create and remove users, while regular users can add, withdraw, see, and transfer their balance. 
+
+However, I was able to test the salted passwords. There are two users in the bank system, mbro and lbro, they both have the same passwords but the logged password is different in the database. The output of the prompt is pasted below, while you can look into the accountsList.txt in the src folder to check the logged passwords.
+
+
+******************************************************
+		Welcome to MS Bank
+******************************************************
+Please login by typing your username then press enter
+	 or type exit and enter to exit
+******************************************************
+
+>peachy
+
+******************************************************
+		Welcome peachy
+******************************************************
+	Type your password
+
+******************************************************
+
+>password
+
+
+******************************************************
+			MAIN MENU
+******************************************************
+Please type menu item in ALL CAPS then press enter.
+
+	CREAT 		To Add an Account
+	REM 		To Remove an Account
+	EXIT 		To Exit this prompt 
+
+******************************************************
+
+>creat
+What is the first name?
+>Mario
+What is the last name?
+>Brother
+Is the name writen below correct?
+Mario Brother
+
+ Enter Y for Yes or N for No
+>y
+Please set the username
+>mbro
+Is the username writen below correct?
+mbro
+
+ Enter Y for Yes or N for No
+>y
+Please type the password
+>password
+Please re-type the password
+>password
+Successfully created an account.
+
+Press enter to continue.
+
+
+******************************************************
+			MAIN MENU
+******************************************************
+Please type menu item in ALL CAPS then press enter.
+
+	CREAT 		To Add an Account
+	REM 		To Remove an Account
+	EXIT 		To Exit this prompt 
+
+******************************************************
+
+>creat
+What is the first name?
+>Luigi
+What is the last name?
+>Brother
+Is the name writen below correct?
+Luigi Brother
+
+ Enter Y for Yes or N for No
+>y
+Please set the username
+>lbro
+Is the username writen below correct?
+lbro
+
+ Enter Y for Yes or N for No
+>y
+Please type the password
+>password
+Please re-type the password
+>password
+Successfully created an account.
+
+Press enter to continue.
+
+
+******************************************************
+			MAIN MENU
+******************************************************
+Please type menu item in ALL CAPS then press enter.
+
+	CREAT 		To Add an Account
+	REM 		To Remove an Account
+	EXIT 		To Exit this prompt 
+
+******************************************************
+
+>exit
+
+Good bye!
+
+
