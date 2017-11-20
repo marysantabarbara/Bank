@@ -24,6 +24,7 @@ A new log in implementation has been added.
   To log in to the adminisitrator
   - Log in to the user "peachy"
   - The password is "password"
+
 Administrators can create and remove users, while regular users can add, withdraw, see, and transfer their balance. 
 
 However, I was able to test the salted passwords. There are two users in the bank system, mbro and lbro, they both have the same passwords but the logged password is different in the database. The output of the prompt is pasted below, while you can look into the accountsList.txt in the src folder to check the logged passwords.
@@ -59,30 +60,67 @@ Please type menu item in ALL CAPS then press enter.
 
 ******************************************************
 
->creat
-What is the first name?
->Mario
-What is the last name?
->Brother
-Is the name writen below correct?
-Mario Brother
+>creat  
+What is the first name?  
+>Mario  
+What is the last name?  
+>Brother  
+Is the name writen below correct?  
+Mario Brother  
+  
+ Enter Y for Yes or N for No  
+>y  
+Please set the username  
+>mbro  
+Is the username writen below correct?  
+mbro  
+  
+ Enter Y for Yes or N for No  
+>y  
+Please type the password  
+>password  
+Please re-type the password  
+>password  
+Successfully created an account.  
+  
+Press enter to continue.  
+  
+  
+******************************************************
+			MAIN MENU
+******************************************************
+Please type menu item in ALL CAPS then press enter.
 
- Enter Y for Yes or N for No
->y
-Please set the username
->mbro
-Is the username writen below correct?
-mbro
+	CREAT 		To Add an Account
+	REM 		To Remove an Account
+	EXIT 		To Exit this prompt 
 
- Enter Y for Yes or N for No
->y
-Please type the password
->password
-Please re-type the password
->password
-Successfully created an account.
+******************************************************
 
-Press enter to continue.
+>creat  
+What is the first name?  
+>Luigi  
+What is the last name?  
+>Brother  
+Is the name writen below correct?  
+Luigi Brother  
+  
+ Enter Y for Yes or N for No  
+>y  
+Please set the username  
+>lbro  
+Is the username writen below correct?  
+lbro  
+  
+ Enter Y for Yes or N for No  
+>y  
+Please type the password  
+>password  
+Please re-type the password  
+>password  
+Successfully created an account.  
+ 
+Press enter to continue.  
 
 
 ******************************************************
@@ -96,44 +134,7 @@ Please type menu item in ALL CAPS then press enter.
 
 ******************************************************
 
->creat
-What is the first name?
->Luigi
-What is the last name?
->Brother
-Is the name writen below correct?
-Luigi Brother
-
- Enter Y for Yes or N for No
->y
-Please set the username
->lbro
-Is the username writen below correct?
-lbro
-
- Enter Y for Yes or N for No
->y
-Please type the password
->password
-Please re-type the password
->password
-Successfully created an account.
-
-Press enter to continue.
-
-
-******************************************************
-			MAIN MENU
-******************************************************
-Please type menu item in ALL CAPS then press enter.
-
-	CREAT 		To Add an Account
-	REM 		To Remove an Account
-	EXIT 		To Exit this prompt 
-
-******************************************************
-
->exit
+>exit  
 
 Good bye!
 
